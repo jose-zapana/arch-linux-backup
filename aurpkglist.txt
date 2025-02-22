@@ -1,0 +1,10 @@
+anydesk-bin
+arduino-ide-bin
+brave-bin
+paru-bin
+pnmixer
+scrub
+todo-bin
+ttf-gentium-basic
+yay
+yay-debug
