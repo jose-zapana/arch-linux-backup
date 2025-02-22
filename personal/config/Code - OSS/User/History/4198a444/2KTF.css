@@ -1,0 +1,75 @@
+/* Estilos para los encabezados */
+.ck-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1a202c; /* Color oscuro, mejor accesibilidad en modo claro */
+}
+
+.ck-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #2d3748; /* Color ligeramente más claro */
+}
+
+.ck-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #4a5568; /* Aún más claro */
+}
+
+.ck-content h4 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #718096; /* Más claro */
+}
+
+.ck-content h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #a0aec0; /* Color claro, pero visible */
+}
+
+/* Estilos para los párrafos */
+.ck-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #4a5568; /* Contraste adecuado para textos largos */
+}
+
+/* Soporte para modo oscuro */
+.dark .ck-content h1 {
+    color: #edf2f7; /* Alto contraste en modo oscuro */
+}
+
+.dark .ck-content h2 {
+    color: #e2e8f0;
+}
+
+.dark .ck-content h3 {
+    color: #cbd5e0;
+}
+
+.dark .ck-content h4 {
+    color: #a0aec0;
+}
+
+.dark .ck-content h5 {
+    color: #718096;
+}
+
+.dark .ck-content p {
+    color: #cbd5e0; /* Texto de párrafos en modo oscuro */
+}
+
+/* Configuración general */
+.ck-editor__editable {
+    background: transparent !important; /* Fondo transparente */
+    color: inherit !important; /* Heredar color del contenedor */
+    border: none; /* Sin bordes */
+}

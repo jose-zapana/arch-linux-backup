@@ -1,0 +1,7 @@
+{
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "vim.handleKeys": {
+        "<C-f>": false,
+    }
+}

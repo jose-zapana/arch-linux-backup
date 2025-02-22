@@ -1,0 +1,252 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use App\Models\Post;
+use Illuminate\Http\Request;
+use App\Models\BlogCategory;
+use App\Models\Tag;
+use App\Http\Requests\PostRequest;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Support\Facades\Cache;
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Gd\Driver;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
+
+class BlogController extends Controller
+{
+    use AuthorizesRequests;
+    public function index()
+    {
+        return view('admin.blogs.index');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {   
+        $categories = BlogCategory::all();
+        $tags = Tag::all();
+
+        return view('admin.blogs.create', compact('categories', 'tags'));
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(PostRequest $request)
+    {
+        $data = $request->all();
+        $data['user_id'] = Auth::id();
+    
+        // Crear el post
+        $post = Post::create($data);
+    
+        // Regex para extraer las URLs de las imágenes del contenido del body
+        $re_extractImages = '/src=["\']([^ ^"^\']*)["\']/ims';
+        preg_match_all($re_extractImages, $data['body'], $matches);
+        $images = $matches[1];
+    
+        // Array para reemplazar las URLs en el contenido del body
+        $replacedUrls = [];
+    
+        foreach ($images as $image) {
+            // Convertir la URL pública en la ruta absoluta del archivo
+            $absolutePath = public_path(parse_url($image, PHP_URL_PATH));
+    
+            // Verificar si el archivo existe antes de procesarlo
+            if (file_exists($absolutePath)) {
+                // Agregar la imagen desde la ruta absoluta a Media Library
+                $mediaItem = $post->addMedia($absolutePath)
+                                  ->toMediaCollection('posts');
+    
+                // Obtener la URL de la conversión 'thumb' en formato WebP
+                $webpUrl = $mediaItem->getUrl('thumb');
+    
+                // Reemplazar la URL temporal por la nueva URL de la conversión
+                $replacedUrls[$image] = $webpUrl;
+    
+                // Eliminar la imagen temporal del directorio `posts`
+                Storage::delete(str_replace(Storage::url(''), '', $image));
+            }
+        }
+    
+        // Reemplazar las URLs en el contenido del body
+        foreach ($replacedUrls as $oldUrl => $newUrl) {
+            $data['body'] = str_replace($oldUrl, $newUrl, $data['body']);
+        }
+    
+        // Actualizar el body del post con las nuevas URLs
+        $post->update(['body' => $data['body']]);
+    
+        // Si hay una imagen destacada, agregarla también a Media Library
+        if ($request->hasFile('file')) {
+            $post->addMediaFromRequest('file')
+                 ->toMediaCollection('images');
+        }
+    
+        // Adjuntar etiquetas si existen
+        if ($request->tags) {
+            $post->tags()->attach($request->tags);
+        }
+    
+        // Limpiar la caché
+        Cache::flush();
+    
+        // Mensaje de éxito
+        session()->flash('swal', [
+            'icon' => 'success',
+            'title' => '¡Bien hecho!',
+            'text' => 'Post creado correctamente',
+        ]);
+    
+        // Redirigir al formulario de edición
+        return redirect()->route('admin.blogs.edit', ['blog' => $post->slug]);
+    }
+    
+    /**
+     * Display the specified resource.
+     */
+    public function show(Post $post)
+    {   
+
+        return view('admin.blogs.show', compact('post'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Post $blog)
+    {   
+        $this->authorize('author', $blog);
+        // return dd($blog);
+        $categories = BlogCategory::all();
+        $tags = Tag::all();
+
+        Cache::flush();
+        
+        return view('admin.blogs.edit', compact('blog', 'categories', 'tags'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(PostRequest $request, Post $post)
+    {
+        $data = $request->all();
+    
+        // Actualizar los campos del post (excepto el body inicialmente)
+        $post->update($data);
+    
+        // Regex para extraer las URLs de las imágenes del contenido del body
+        $re_extractImages = '/src=["\']([^ ^"^\']*)["\']/ims';
+        preg_match_all($re_extractImages, $data['body'], $matches);
+        $images = $matches[1];
+    
+        // Obtener todas las imágenes asociadas al post en Media Library
+        $existingMedia = $post->getMedia('posts');
+    
+        // Array para reemplazar las URLs en el contenido del body
+        $replacedUrls = [];
+    
+        foreach ($images as $image) {
+            // Convertir la URL pública en la ruta absoluta del archivo
+            $absolutePath = public_path(parse_url($image, PHP_URL_PATH));
+    
+            // Verificar si el archivo existe antes de procesarlo
+            if (file_exists($absolutePath)) {
+                // Agregar la imagen desde la ruta absoluta a Media Library
+                $mediaItem = $post->addMedia($absolutePath)
+                                  ->toMediaCollection('posts');
+    
+                // Obtener la URL de la conversión 'thumb' en formato WebP
+                $webpUrl = $mediaItem->getUrl('thumb');
+    
+                // Reemplazar la URL temporal por la nueva URL de la conversión
+                $replacedUrls[$image] = $webpUrl;
+    
+                // Eliminar la imagen temporal del directorio `posts`
+                Storage::delete(str_replace(Storage::url(''), '', $image));
+            }
+        }
+    
+        // Reemplazar las URLs en el contenido del body
+        foreach ($replacedUrls as $oldUrl => $newUrl) {
+            $data['body'] = str_replace($oldUrl, $newUrl, $data['body']);
+        }
+    
+        // Actualizar el body del post con las nuevas URLs
+        $post->update(['body' => $data['body']]);
+    
+        // Eliminar imágenes que ya no están en el contenido del body
+        foreach ($existingMedia as $mediaItem) {
+            if (!in_array($mediaItem->getUrl(), $replacedUrls)) {
+                // Eliminar el archivo de Media Library
+                $mediaItem->delete();
+            }
+        }
+    
+        // Si hay una nueva imagen destacada, manejarla
+        if ($request->hasFile('file')) {
+            // Eliminar la imagen destacada anterior si existe
+            if ($post->getFirstMedia('images')) {
+                $post->getFirstMedia('images')->delete();
+            }
+    
+            // Agregar la nueva imagen destacada
+            $post->addMediaFromRequest('file')->toMediaCollection('images');
+        }
+    
+        // Adjuntar etiquetas si existen
+        if ($request->tags) {
+            $post->tags()->sync($request->tags);
+        }
+    
+        // Limpiar la caché
+        Cache::flush();
+    
+        // Mensaje de éxito
+        session()->flash('swal', [
+            'icon' => 'success',
+            'title' => '¡Bien hecho!',
+            'text' => 'Post actualizado correctamente',
+        ]);
+    
+        // Redirigir al formulario de edición
+        return redirect()->route('admin.blogs.edit', ['blog' => $post->slug]);
+    }
+    
+    
+    
+    public function upload(Request $request)
+    {
+        $path = Storage::put('posts', $request->file('upload'));
+        return [
+            'url' => Storage::url($path)
+        ];
+    }
+    
+    
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Post $blog)
+    {
+        $this->authorize('author', $blog);
+        // Eliminar imagen si existe
+        if ($blog->image) {
+            Storage::delete($blog->image->url);
+            $blog->image()->delete();
+        }
+
+        $blog->delete();
+
+        Cache::flush();
+
+        return redirect()->route('admin.blogs.index');
+    }
+}

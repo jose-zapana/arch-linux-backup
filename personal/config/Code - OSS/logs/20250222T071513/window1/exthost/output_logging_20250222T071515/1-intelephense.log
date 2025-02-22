@@ -1,0 +1,8 @@
+[Info  - 7:15:16 a. m.] Initialising intelephense 1.8.1
+[Info  - 7:15:16 a. m.] Reading state from /home/jezs/.config/Code - OSS/User/workspaceStorage/7d930dfa9ae1be12abd4fbe20cda072f/bmewburn.vscode-intelephense-client/1cf2fd38.
+[Info  - 7:15:17 a. m.] Initialised in 1054 ms
+[Info  - 7:15:18 a. m.] Searching file:///home/jezs/.vscode-oss/extensions/bmewburn.vscode-intelephense-client-1.8.1-universal/node_modules/intelephense/lib/stub for files to index.
+[Info  - 7:15:18 a. m.] Searching file:///var/www/pc-hard for files to index.
+[Warn  - 7:15:18 a. m.] file:///var/www/pc-hard/vendor/composer/autoload_classmap.php is over the maximum file size of 1000000 bytes.
+[Warn  - 7:15:18 a. m.] file:///var/www/pc-hard/vendor/composer/autoload_static.php is over the maximum file size of 1000000 bytes.
+[Warn  - 7:15:18 a. m.] file:///var/www/pc-hard/vendor/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.

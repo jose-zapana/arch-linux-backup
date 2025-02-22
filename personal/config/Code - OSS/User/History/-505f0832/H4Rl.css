@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark {
+    color: #ffffff; /* Texto blanco en modo oscuro */
+    background-color: #121212; /* Fondo oscuro */
+}
+
+/* Encabezados */
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5 {
+    color: inherit; /* Hereda el color del cuerpo */
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    scroll-margin-top: 100px;
+}
+
+.post-body h1 {
+    font-size: 2.5rem;
+}
+
+.post-body h2 {
+    font-size: 2rem;
+}
+
+.post-body h3 {
+    font-size: 1.75rem;
+}
+
+.post-body h4 {
+    font-size: 1.5rem;
+}
+
+.post-body h5 {
+    font-size: 1.25rem;
+}
+
+/* Párrafos */
+.post-body p {
+    color: inherit; /* Hereda el color del cuerpo */
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Modo oscuro: encabezados y párrafos */
+body.dark .post-body h1,
+body.dark .post-body h2,
+body.dark .post-body h3,
+body.dark .post-body h4,
+body.dark .post-body h5,
+body.dark .post-body p {
+    color: #ffffff;
+}
+
+/* Tablas */
+.post-body figure.table {
+    overflow-x: auto; /* Desplazamiento horizontal para tablas */
+    -webkit-overflow-scrolling: touch; /* Soporte móvil */
+    width: 100%; /* Limita el ancho de la tabla */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.post-body table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Elimina espacio entre celdas */
+}
+
+.post-body td,
+.post-body th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Modo oscuro: tablas */
+body.dark .post-body table {
+    background-color: #333; /* Fondo oscuro */
+}
+
+body.dark .post-body td,
+body.dark .post-body th {
+    border-color: #555; /* Bordes oscuros */
+    color: #ccc; /* Texto claro */
+}
+
+/* Fondo y bordes del contenedor en modo oscuro */
+body.dark .post-body {
+    background-color: #222; /* Fondo oscuro */
+    color: #ddd; /* Texto claro */
+}

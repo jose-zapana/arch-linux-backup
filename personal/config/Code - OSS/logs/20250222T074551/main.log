@@ -1,0 +1,22 @@
+2025-02-22 07:45:51.955 [info] update#setState disabled
+2025-02-22 07:45:51.956 [info] update#ctor - updates are disabled as there is no update URL
+2025-02-22 07:45:55.520 [error] Error: Error while decrypting the ciphertext provided to safeStorage.decryptString.
+    at ph.decrypt (file:///usr/lib/code/out/main.js:43:18328)
+    at Object.call (file:///usr/lib/code/out/main.js:33:4564)
+    at wf.s (file:///usr/lib/code/out/main.js:31:20009)
+    at wf.q (file:///usr/lib/code/out/main.js:31:19532)
+    at Ho.value (file:///usr/lib/code/out/main.js:31:18934)
+    at D.B (file:///usr/lib/code/out/main.js:30:2373)
+    at D.C (file:///usr/lib/code/out/main.js:30:2443)
+    at D.fire (file:///usr/lib/code/out/main.js:30:2660)
+    at Ho.value (file:///usr/lib/code/out/main.js:28:4893)
+    at D.B (file:///usr/lib/code/out/main.js:30:2373)
+    at D.fire (file:///usr/lib/code/out/main.js:30:2591)
+    at Ho.value (file:///usr/lib/code/out/main.js:28:5077)
+    at D.B (file:///usr/lib/code/out/main.js:30:2373)
+    at D.fire (file:///usr/lib/code/out/main.js:30:2591)
+    at j (file:///usr/lib/code/out/main.js:28:7328)
+    at IpcMainImpl.i (file:///usr/lib/code/out/main.js:33:20534)
+    at IpcMainImpl.emit (node:events:518:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:85784)
+    at WebContents.emit (node:events:518:28)

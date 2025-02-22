@@ -1,0 +1,10 @@
+2025-02-22 07:45:55.971 [info] GitLens v16.3.2 activating in Code - OSS (1.97.2) on the desktop; language='es', logLevel='warn', defaultDateLocale='null' (someValue.machineId|someValue.sessionId)
+To enable debug logging, set `"gitlens.outputLevel": "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette
+
+2025-02-22 07:45:56.341 [info] [2025-02-22 12:45:56.303] JSON.parse
+SyntaxError: Unexpected end of JSON input
+[2025-02-22 12:45:56.310] Zi.e — Failed to release lock: file:///home/jezs/.gk/lockfile
+EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, unlink '/home/jezs/.gk/lockfile'
+[2025-02-22 12:45:56.316] Zi.e — Failed to release lock: file:///home/jezs/.gk/lockfile
+EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, unlink '/home/jezs/.gk/lockfile'
+

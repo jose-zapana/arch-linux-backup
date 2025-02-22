@@ -1,0 +1,29 @@
+.table {
+    @apply w-full;
+}
+.table th {
+    @apply p-3 text-sm font-semibold tracking-wide text-left;
+}
+
+.table td {
+    @apply p-3 text-sm text-gray-700 whitespace-nowrap;
+}
+
+.table tbody tr:nth-child(2n + 1) {
+    @apply bg-gray-50;
+}
+
+html,
+body {
+    height: 100%; /* Hace que el body ocupe el 100% del viewport */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la pantalla */
+}
+
+footer {
+    margin-top: auto; /* Empuja el footer hacia abajo cuando el contenido es menor al viewport */
+}

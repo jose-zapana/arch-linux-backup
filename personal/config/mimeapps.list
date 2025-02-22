@@ -1,0 +1,10 @@
+[Added Associations]
+video/mp4=vlc-7.desktop;vlc-6.desktop;vlc-5.desktop;vlc-4.desktop;/home/jezs/.local/share/applications/vlc-3.desktop;
+
+[Default Applications]
+video/mp4=vlc-7.desktop;
+text/html=brave-browser.desktop
+x-scheme-handler/http=brave-browser.desktop
+x-scheme-handler/https=brave-browser.desktop
+x-scheme-handler/about=brave-browser.desktop
+x-scheme-handler/unknown=brave-browser.desktop

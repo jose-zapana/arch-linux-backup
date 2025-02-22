@@ -1,0 +1,53 @@
+/* Estilos para los encabezados */
+.post-body h1 {
+    font-size: 2.25rem; /* Tamaño adecuado para encabezados h1 */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.post-body h2 {
+    font-size: 1.875rem; /* Tamaño adecuado para encabezados h2 */
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.post-body h3 {
+    font-size: 1.5rem; /* Tamaño adecuado para encabezados h3 */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.post-body h4 {
+    font-size: 1.25rem; /* Tamaño adecuado para encabezados h4 */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.post-body h5 {
+    font-size: 1.125rem; /* Tamaño adecuado para encabezados h5 */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para los párrafos */
+.post-body p {
+    font-size: 1rem; /* Tamaño adecuado para párrafos */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para los encabezados dentro del editor (por si hay contenido renderizado) */
+.post-body .ck-content h1,
+.post-body .ck-content h2,
+.post-body .ck-content h3,
+.post-body .ck-content h4,
+.post-body .ck-content h5 {
+    font-weight: bold;
+}
+
+/* Estilos para los párrafos dentro del editor */
+.post-body .ck-content p {
+    font-size: 1rem; /* Tamaño adecuado para párrafos */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}

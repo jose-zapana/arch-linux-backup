@@ -1,0 +1,358 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark {
+    color: #e5e5e5;
+    background-color: #121212;
+}
+
+/* Encabezados */
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5 {
+    color: inherit;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    scroll-margin-top: 100px;
+}
+
+.post-body h1 {
+    font-size: 2.5rem;
+}
+
+.post-body h2 {
+    font-size: 2rem;
+}
+
+.post-body h3 {
+    font-size: 1.75rem;
+}
+
+.post-body h4 {
+    font-size: 1.5rem;
+}
+
+.post-body h5 {
+    font-size: 1.25rem;
+}
+
+/* Párrafos */
+.post-body p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Imágenes */
+.post-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Contenedor responsivo para tablas */
+.post-body .table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+/* Tablas */
+.post-body table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Mejor manejo de la distribución de las columnas */
+}
+
+.post-body table th,
+.post-body table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    word-wrap: break-word; /* Rompe las palabras largas */
+}
+
+.post-body table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+body.dark .post-body table th {
+    background-color: #1f1f1f;
+}
+
+.post-body table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+body.dark .post-body table tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+/* Modo oscuro */
+body.dark .post-body table th,
+body.dark .post-body table td {
+    border-color: #333;
+}
+
+/* Enlaces */
+.post-body a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+body.dark .post-body a {
+    color: #89c2d9;
+}
+
+/* Bloques de código */
+.post-body pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+body.dark .post-body pre {
+    background: #1e1e1e;
+    color: #e5e5e5;
+}
+
+/* Listas */
+.post-body ul,
+.post-body ol {
+    margin: 0 0 1rem 1.5rem;
+    padding-left: 1rem;
+}
+
+.post-body ul li::marker {
+    color: #007bff;
+}
+
+body.dark .post-body ul li::marker {
+    color: #89c2d9;
+}
+
+/* Botones */
+.post-body button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+body.dark .post-body button {
+    background-color: #89c2d9;
+}
+
+.post-body button:hover {
+    background-color: #0056b3;
+}
+
+body.dark .post-body button:hover {
+    background-color: #68a4c6;
+}
+
+/* Bloques de cita */
+.post-body blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+body.dark .post-body blockquote {
+    border-left-color: #89c2d9;
+    color: #ccc;
+}
+
+/* Optimizaciones SEO */
+.post-body img[alt]:not([alt=""]) {
+    border: 2px solid #28a745;
+}
+
+.post-body figure {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.post-body figcaption {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+body.dark .post-body figcaption {
+    color: #aaa;
+}
+
+/* Estilos para las tablas generadas por CKEditor */
+figure.table {
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark figure.table {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+figure.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+figure.table table th,
+figure.table table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+figure.table table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+body.dark figure.table table th {
+    background-color: #2a2a2a;
+    color: #e5e5e5;
+}
+
+figure.table table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+body.dark figure.table table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+/* Nueva Clase para la Responsividad de las Tablas CKEditor */
+figure.table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* IE10+ */
+    overflow-scrolling: touch;
+}
+
+figure.table table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 882px) {
+    .post-body table {
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+        padding: 0.5rem;
+    }
+
+    .post-body table th,
+    .post-body table td {
+        padding: 0.5rem;
+    }
+
+    .post-body pre {
+        font-size: 0.85rem;
+    }
+
+    .post-body ul,
+    .post-body ol {
+        padding-left: 1.25rem;
+    }
+
+    .post-body img {
+        max-width: 100%;
+    }
+
+    /* Ajustes para títulos */
+    .post-body h1 {
+        font-size: 2rem;
+    }
+
+    .post-body h2 {
+        font-size: 1.75rem;
+    }
+
+    .post-body h3 {
+        font-size: 1.5rem;
+    }
+
+    .post-body h4 {
+        font-size: 1.25rem;
+    }
+
+    .post-body h5 {
+        font-size: 1rem;
+    }
+}
+
+/* Optimización para pantallas muy pequeñas (344px) */
+@media (max-width: 344px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .post-body {
+        padding: 0 0.5rem;
+    }
+
+    .post-body table th,
+    .post-body table td {
+        padding: 0.4rem;
+    }
+
+    .post-body pre {
+        font-size: 0.8rem;
+    }
+
+    .post-body img {
+        margin: 0.5rem 0;
+    }
+
+    .post-body h1 {
+        font-size: 1.5rem;
+    }
+
+    .post-body h2 {
+        font-size: 1.3rem;
+    }
+
+    .post-body h3 {
+        font-size: 1.1rem;
+    }
+
+    .post-body h4 {
+        font-size: 1rem;
+    }
+
+    .post-body h5 {
+        font-size: 0.9rem;
+    }
+}

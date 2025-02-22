@@ -1,0 +1,67 @@
+2025-02-22 07:22:58.443 [info] [main] Nivel de registro: Info
+2025-02-22 07:22:58.443 [info] [main] Validando git encontrado en: "git"
+2025-02-22 07:22:58.443 [info] [main] Usando git "2.48.1" de "git"
+2025-02-22 07:22:58.443 [info] [Model][doInitialScan] Initial repository scan started
+2025-02-22 07:22:58.443 [info] > git rev-parse --show-toplevel [7ms]
+2025-02-22 07:22:58.443 [info] > git rev-parse --git-dir --git-common-dir [5ms]
+2025-02-22 07:22:58.443 [info] [Model][openRepository] Opened repository: /var/www/pc-hard
+2025-02-22 07:22:58.443 [info] > git fetch [1077ms]
+2025-02-22 07:22:58.443 [info] /bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+Missing or invalid credentials.
+Skip silent fetch commands
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+Missing or invalid credentials.
+Skip silent fetch commands
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/jose-zapana/pc-hard.git/'
+2025-02-22 07:22:58.475 [info] > git rev-parse --show-toplevel [266ms]
+2025-02-22 07:22:58.476 [info] > git config --get commit.template [272ms]
+2025-02-22 07:22:58.537 [info] > git config --get commit.template [87ms]
+2025-02-22 07:22:58.691 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [122ms]
+2025-02-22 07:22:58.725 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [68ms]
+2025-02-22 07:22:58.906 [info] > git check-ignore -v -z --stdin [171ms]
+2025-02-22 07:22:59.010 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [52ms]
+2025-02-22 07:22:59.027 [info] > git rev-parse --show-toplevel [87ms]
+2025-02-22 07:22:59.049 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [43ms]
+2025-02-22 07:22:59.057 [info] > git config --get commit.template [60ms]
+2025-02-22 07:22:59.108 [info] > git config --get --local branch.main.vscode-merge-base [51ms]
+2025-02-22 07:22:59.108 [warning] [Git][config] git config failed: Failed to execute git
+2025-02-22 07:22:59.116 [info] > git config --get --local branch.main.vscode-merge-base [89ms]
+2025-02-22 07:22:59.116 [warning] [Git][config] git config failed: Failed to execute git
+2025-02-22 07:22:59.178 [info] > git reflog main --grep-reflog=branch: Created from *. [53ms]
+2025-02-22 07:22:59.186 [info] > git reflog main --grep-reflog=branch: Created from *. [70ms]
+2025-02-22 07:22:59.193 [info] > git rev-parse --show-toplevel [102ms]
+2025-02-22 07:22:59.232 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [39ms]
+2025-02-22 07:22:59.232 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-02-22 07:22:59.232 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-02-22 07:22:59.244 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [58ms]
+2025-02-22 07:22:59.244 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-02-22 07:22:59.244 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-02-22 07:22:59.251 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [75ms]
+2025-02-22 07:22:59.259 [info] > git merge-base refs/heads/main refs/remotes/origin/main [15ms]
+2025-02-22 07:22:59.267 [info] > git rev-parse --show-toplevel [44ms]
+2025-02-22 07:22:59.282 [info] > git diff --name-status -z --diff-filter=ADMR 4d25453c0f18cacb19c1b57a6e3d6e0d6d95d3e9...refs/remotes/origin/main [15ms]
+2025-02-22 07:22:59.282 [info] > git merge-base refs/heads/main refs/remotes/origin/main [31ms]
+2025-02-22 07:22:59.302 [info] > git diff --name-status -z --diff-filter=ADMR 4d25453c0f18cacb19c1b57a6e3d6e0d6d95d3e9...refs/remotes/origin/main [9ms]
+2025-02-22 07:22:59.302 [info] > git rev-parse --show-toplevel [21ms]
+2025-02-22 07:22:59.347 [info] > git status -z -uall [36ms]
+2025-02-22 07:22:59.347 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [28ms]
+2025-02-22 07:22:59.380 [info] > git rev-parse --show-toplevel [55ms]
+2025-02-22 07:22:59.748 [info] > git rev-parse --show-toplevel [164ms]
+2025-02-22 07:22:59.760 [info] > git rev-parse --show-toplevel [5ms]
+2025-02-22 07:22:59.789 [info] > git rev-parse --show-toplevel [15ms]
+2025-02-22 07:22:59.801 [info] > git rev-parse --show-toplevel [4ms]
+2025-02-22 07:22:59.849 [info] > git rev-parse --show-toplevel [20ms]
+2025-02-22 07:22:59.859 [info] > git rev-parse --show-toplevel [2ms]
+2025-02-22 07:22:59.870 [info] > git rev-parse --show-toplevel [4ms]
+2025-02-22 07:22:59.870 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-02-22 07:22:59.896 [info] > git show --textconv :app/Livewire/Admin/Quotes/QuotationCreate.php [18ms]
+2025-02-22 07:22:59.899 [info] > git ls-files --stage -- /var/www/pc-hard/app/Livewire/Admin/Quotes/QuotationCreate.php [14ms]
+2025-02-22 07:22:59.924 [info] > git cat-file -s 64f0edd55b53c3b304a2f8f796ebdf9422f1363d [17ms]
+2025-02-22 07:23:00.035 [info] > git blame --root --incremental 4d25453c0f18cacb19c1b57a6e3d6e0d6d95d3e9 -- /var/www/pc-hard/app/Livewire/Admin/Quotes/QuotationCreate.php [49ms]
+2025-02-22 07:23:00.364 [info] > git config --get --local branch.main.github-pr-owner-number [1ms]
+2025-02-22 07:23:00.365 [warning] [Git][config] git config failed: Failed to execute git
+2025-02-22 07:23:03.295 [info] > git config --get commit.template [48ms]
+2025-02-22 07:23:03.316 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2025-02-22 07:23:03.359 [info] > git status -z -uall [16ms]
+2025-02-22 07:23:03.362 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]

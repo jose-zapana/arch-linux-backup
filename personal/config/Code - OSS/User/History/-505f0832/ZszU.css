@@ -1,0 +1,200 @@
+/* Estilos generales */
+.post-body {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.post-body.dark {
+    color: #e5e5e5;
+    background-color: #121212;
+}
+
+/* Encabezados */
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5 {
+    color: inherit; /* Hereda del tema activo */
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    scroll-margin-top: 100px;
+}
+
+.post-body h1 {
+    font-size: 2.5rem;
+}
+
+.post-body h2 {
+    font-size: 2rem;
+}
+
+.post-body h3 {
+    font-size: 1.75rem;
+}
+
+.post-body h4 {
+    font-size: 1.5rem;
+}
+
+.post-body h5 {
+    font-size: 1.25rem;
+}
+
+/* Párrafos */
+.post-body p {
+    color: inherit; /* Hereda del tema activo */
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Imágenes */
+.post-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Contenedor exclusivo para tablas */
+.post-body .table-container {
+    width: 100%;
+    overflow-x: auto; /* Sólo afecta al contenido interno */
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    background-color: inherit; /* Hereda del tema activo */
+}
+
+/* Tablas */
+.post-body table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    color: inherit;
+    background-color: transparent;
+}
+
+.post-body table th,
+.post-body table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.post-body table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+body.dark .post-body table th {
+    background-color: #333; /* Fondo oscuro */
+}
+
+.post-body table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+body.dark .post-body table tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+body.dark .post-body table td {
+    border-color: #555; /* Bordes oscuros */
+    color: #e5e5e5; /* Texto claro */
+}
+
+body.dark .post-body table {
+    background-color: #1e1e1e; /* Fondo oscuro para tablas */
+}
+
+/* Enlaces */
+.post-body a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+body.dark .post-body a {
+    color: #89c2d9;
+}
+
+/* Bloques de código */
+.post-body pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    max-height: 400px; /* Limita la altura máxima */
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+body.dark .post-body pre {
+    background: #1e1e1e;
+    color: #e5e5e5;
+}
+
+/* Listas */
+.post-body ul,
+.post-body ol {
+    margin: 0 0 1rem 1.5rem;
+    padding-left: 1rem;
+}
+
+.post-body ul li::marker {
+    color: #007bff;
+}
+
+body.dark .post-body ul li::marker {
+    color: #89c2d9;
+}
+
+/* Bloques de cita */
+.post-body blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+body.dark .post-body blockquote {
+    border-left-color: #89c2d9;
+    color: #ccc;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 882px) {
+    .post-body table {
+        font-size: 0.9rem;
+    }
+
+    .post-body pre {
+        font-size: 0.85rem;
+    }
+
+    .post-body img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 344px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .post-body h1 {
+        font-size: 1.8rem;
+    }
+
+    .post-body h2 {
+        font-size: 1.5rem;
+    }
+}

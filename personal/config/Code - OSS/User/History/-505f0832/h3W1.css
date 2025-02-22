@@ -1,0 +1,279 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif; /* Fuente legible y moderna */
+    color: #333; /* Texto oscuro para modo claro */
+    background-color: #fff; /* Fondo blanco */
+}
+
+body.dark {
+    color: #e5e5e5; /* Texto claro para modo oscuro */
+    background-color: #121212; /* Fondo oscuro */
+}
+
+/* Encabezados */
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5 {
+    color: inherit; /* Hereda el color para consistencia en modos claro/oscuro */
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    line-height: 1.3; /* Mejor legibilidad */
+    scroll-margin-top: 100px; /* Mejora navegación anclada */
+}
+
+.post-body h1 {
+    font-size: 2.5rem;
+}
+
+.post-body h2 {
+    font-size: 2rem;
+}
+
+.post-body h3 {
+    font-size: 1.75rem;
+}
+
+.post-body h4 {
+    font-size: 1.5rem;
+}
+
+.post-body h5 {
+    font-size: 1.25rem;
+}
+
+/* Párrafos */
+.post-body p {
+    font-size: 1rem;
+    line-height: 1.8; /* Mejora legibilidad en bloques de texto */
+    margin-bottom: 1rem;
+    text-align: justify; /* Mejor lectura para textos largos */
+}
+
+/* Imágenes */
+.post-body img {
+    max-width: 100%; /* Adaptable a dispositivos */
+    height: auto;
+    border-radius: 8px; /* Diseño más amigable */
+    margin: 1rem 0;
+}
+
+/* Contenedor responsivo para tablas */
+.post-body .table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite desplazamiento horizontal en dispositivos pequeños */
+    margin-bottom: 1.5rem;
+    border-radius: 8px; /* Mantiene el diseño amigable */
+}
+
+/* Tablas */
+.post-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0; /* Elimina margen extra que pueda causar desbordes */
+}
+
+.post-body table th,
+.post-body table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    white-space: nowrap; /* Evita que el texto se divida en palabras largas */
+}
+
+.post-body table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+body.dark .post-body table th {
+    background-color: #1f1f1f;
+}
+
+.post-body table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+body.dark .post-body table tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+/* Mejoras en el modo oscuro */
+body.dark .post-body table th,
+body.dark .post-body table td {
+    border-color: #333; /* Bordes oscuros */
+}
+
+/* Enlaces */
+.post-body a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+body.dark .post-body a {
+    color: #89c2d9;
+}
+
+/* Bloques de código */
+.post-body pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+body.dark .post-body pre {
+    background: #1e1e1e;
+    color: #e5e5e5;
+}
+
+/* Listas */
+.post-body ul,
+.post-body ol {
+    margin: 0 0 1rem 1.5rem;
+    padding-left: 1rem;
+}
+
+.post-body ul li::marker {
+    color: #007bff; /* Personalización de viñetas */
+}
+
+body.dark .post-body ul li::marker {
+    color: #89c2d9;
+}
+
+/* Botones */
+.post-body button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+body.dark .post-body button {
+    background-color: #89c2d9;
+}
+
+.post-body button:hover {
+    background-color: #0056b3;
+}
+
+body.dark .post-body button:hover {
+    background-color: #68a4c6;
+}
+
+/* Bloques de cita */
+.post-body blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+body.dark .post-body blockquote {
+    border-left-color: #89c2d9;
+    color: #ccc;
+}
+
+/* Optimizaciones SEO */
+.post-body img[alt]:not([alt=""]) {
+    border: 2px solid #28a745;
+}
+
+.post-body figure {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.post-body figcaption {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+body.dark .post-body figcaption {
+    color: #aaa;
+}
+
+/* Estilos para las tablas generadas por CKEditor */
+figure.table {
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark figure.table {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+figure.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+figure.table table th,
+figure.table table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+figure.table table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+body.dark figure.table table th {
+    background-color: #2a2a2a;
+    color: #e5e5e5;
+}
+
+figure.table table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+body.dark figure.table table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+/* Nueva Clase para la Responsividad de las Tablas CKEditor */
+figure.table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* IE10+ */
+    overflow-scrolling: touch;
+}
+
+figure.table table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 767px) {
+    figure.table table th,
+    figure.table table td {
+        white-space: normal; /* Permite que el texto se divida en múltiples líneas en pantallas pequeñas */
+        padding: 0.5rem; /* Reduce el espacio para mejorar la adaptación en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 344px) {
+    figure.table table {
+        font-size: 0.75rem; /* Ajusta el tamaño de la fuente en pantallas muy pequeñas */
+    }
+}

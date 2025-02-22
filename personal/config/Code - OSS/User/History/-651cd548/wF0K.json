@@ -1,0 +1,8 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "bladeFormatter.format.enabled": true,
+    "bladeFormatter.format.indentSize": 4,
+    "bladeFormatter.format.wrapLineLength": 120,
+    "bladeFormatter.format.sortTailwindcssClasses": true
+}

@@ -1,0 +1,53 @@
+2025-02-22 07:45:52.865 [info] Started local extension host with pid 6600.
+2025-02-22 07:45:53.430 [error] Extension 'GitHub.vscode-pull-request-github CANNOT USE these API proposals 'activeComment, codiconDecoration, codeActionRanges, commentingRangeHint, commentReactor, commentReveal, commentThreadApplicability, contribAccessibilityHelpContent, contribCommentEditorActionsMenu, contribCommentPeekContext, contribCommentThreadAdditionalMenu, contribCommentsViewThreadMenus, contribEditorContentMenu, contribShareMenu, diffCommand, quickDiffProvider, shareProvider, tokenInformation, treeViewMarkdownMessage'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-02-22 07:45:53.494 [error] [GitHub.vscode-pull-request-github]: commentsView/commentThread/context es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribCommentsViewThreadMenus"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:53.494 [error] [GitHub.vscode-pull-request-github]: editor/content es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribEditorContentMenu"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:53.495 [error] [GitHub.vscode-pull-request-github]: comments/comment/editorActions es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribCommentEditorActionsMenu"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:53.495 [error] [GitHub.vscode-pull-request-github]: comments/commentThread/additionalActions es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribCommentThreadAdditionalMenu"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:53.495 [error] [GitHub.vscode-pull-request-github]: comments/commentThread/title/context es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribCommentPeekContext"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:53.495 [error] [GitHub.vscode-pull-request-github]: comments/commentThread/comment/context es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribCommentPeekContext"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:53.495 [error] [GitHub.vscode-pull-request-github]: editor/context/share es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribShareMenu"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:53.495 [error] [GitHub.vscode-pull-request-github]: file/share es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribShareMenu"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:53.496 [error] [GitHub.vscode-pull-request-github]: editor/title/context/share es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribShareMenu"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:53.496 [error] [GitHub.vscode-pull-request-github]: explorer/context/share es un identificador de menú propuesto. Requiere "package.json#enabledApiProposals: ["contribShareMenu"]' y solo está disponible cuando se queda sin desarrollo o con el siguiente modificador de línea de comandos: --enable-proposed-api GitHub.vscode-pull-request-github
+2025-02-22 07:45:55.150 [error] [File Watcher] Unexpected error: inotify_add_watch on '/var/www/pc-hard/.git/.gitstatus.KEDcfk/a' failed: No existe el fichero o el directorio (EUNKNOWN) (path: /var/www/pc-hard)
+2025-02-22 07:45:55.151 [error] [File Watcher (universal)] inotify_add_watch on '/var/www/pc-hard/.git/.gitstatus.KEDcfk/a' failed: No existe el fichero o el directorio
+2025-02-22 07:45:55.312 [error] Error while getting the latest version for the extension bmewburn.vscode-intelephense-client. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.312 [error] Error while getting the latest version for the extension bradlc.vscode-tailwindcss. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.312 [error] Error while getting the latest version for the extension codeium.codeium. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.312 [error] Error while getting the latest version for the extension codingyu.laravel-goto-view. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.312 [error] Error while getting the latest version for the extension eamodio.gitlens. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.312 [error] Error while getting the latest version for the extension enkia.tokyo-night. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.312 [error] Error while getting the latest version for the extension esbenp.prettier-vscode. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.312 [error] Error while getting the latest version for the extension github.vscode-pull-request-github. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.313 [error] Error while getting the latest version for the extension mrchetan.goto-laravel-components. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.313 [error] Error while getting the latest version for the extension ms-ceintl.vscode-language-pack-es. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.313 [error] Error while getting the latest version for the extension naumovs.color-highlight. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.313 [error] Error while getting the latest version for the extension onecentlin.laravel-blade. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.313 [error] Error while getting the latest version for the extension onecentlin.laravel5-snippets. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.313 [error] Error while getting the latest version for the extension shan.code-settings-sync. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.313 [error] Error while getting the latest version for the extension shufo.vscode-blade-formatter. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.313 [error] Error while getting the latest version for the extension vscodevim.vim. Cannot read properties of undefined (reading 'replace')
+2025-02-22 07:45:55.518 [info] [perf] Render performance baseline is 25ms
+2025-02-22 07:45:55.522 [error] Error: Error while decrypting the ciphertext provided to safeStorage.decryptString.
+    at ph.decrypt (file:///usr/lib/code/out/main.js:43:18328)
+    at Object.call (file:///usr/lib/code/out/main.js:33:4564)
+    at wf.s (file:///usr/lib/code/out/main.js:31:20009)
+    at wf.q (file:///usr/lib/code/out/main.js:31:19532)
+    at Ho.value (file:///usr/lib/code/out/main.js:31:18934)
+    at D.B (file:///usr/lib/code/out/main.js:30:2373)
+    at D.C (file:///usr/lib/code/out/main.js:30:2443)
+    at D.fire (file:///usr/lib/code/out/main.js:30:2660)
+    at Ho.value (file:///usr/lib/code/out/main.js:28:4893)
+    at D.B (file:///usr/lib/code/out/main.js:30:2373)
+    at D.fire (file:///usr/lib/code/out/main.js:30:2591)
+    at Ho.value (file:///usr/lib/code/out/main.js:28:5077)
+    at D.B (file:///usr/lib/code/out/main.js:30:2373)
+    at D.fire (file:///usr/lib/code/out/main.js:30:2591)
+    at j (file:///usr/lib/code/out/main.js:28:7328)
+    at IpcMainImpl.i (file:///usr/lib/code/out/main.js:33:20534)
+    at IpcMainImpl.emit (node:events:518:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:85784)
+    at WebContents.emit (node:events:518:28)
+2025-02-22 07:45:56.428 [warning] Authentication provider codeium_auth was not declared in the Extension Manifest.
+2025-02-22 07:55:51.485 [error] Se ha producido un error desconocido. Consulte el registro para obtener más detalles.

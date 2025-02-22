@@ -1,0 +1,3 @@
+2025-02-22 07:45:55.250 [info] Nivel de registro: Info
+2025-02-22 07:45:56.066 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2025-02-22 07:46:28.299 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for jose-zapana/pc-hard: Error: No GitHub authentication session available.

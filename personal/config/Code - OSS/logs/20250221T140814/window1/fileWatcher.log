@@ -1,0 +1,2 @@
+2025-02-21 14:08:18.402 [error] [File Watcher] Unexpected error: inotify_add_watch on '/var/www/pc-hard/.git/.gitstatus.hDamMM' failed: No existe el fichero o el directorio (EUNKNOWN) (path: /var/www/pc-hard)
+2025-02-21 14:08:18.402 [error] [File Watcher (universal)] inotify_add_watch on '/var/www/pc-hard/.git/.gitstatus.hDamMM' failed: No existe el fichero o el directorio

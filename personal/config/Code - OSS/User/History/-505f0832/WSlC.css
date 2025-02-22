@@ -1,0 +1,55 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark {
+    color: #e5e5e5;
+    background-color: #121212;
+}
+
+/* Encabezados */
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5 {
+    color: inherit; /* Hereda del tema activo */
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    scroll-margin-top: 100px;
+}
+
+.post-body h1 {
+    font-size: 2.5rem;
+}
+
+.post-body h2 {
+    font-size: 2rem;
+}
+
+.post-body h3 {
+    font-size: 1.75rem;
+}
+
+.post-body h4 {
+    font-size: 1.5rem;
+}
+
+.post-body h5 {
+    font-size: 1.25rem;
+}
+
+/* Párrafos */
+.post-body p {
+    color: inherit; /* Hereda del tema activo */
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify;
+}

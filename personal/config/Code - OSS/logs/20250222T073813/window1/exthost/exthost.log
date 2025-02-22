@@ -1,0 +1,56 @@
+2025-02-22 07:38:15.434 [info] Extension host with pid 4532 started
+2025-02-22 07:38:15.434 [info] Skipping acquiring lock for /home/jezs/.config/Code - OSS/User/workspaceStorage/7d930dfa9ae1be12abd4fbe20cda072f.
+2025-02-22 07:38:15.783 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-02-22 07:38:15.788 [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+2025-02-22 07:38:15.791 [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client, startup: false, activationEvent: 'onLanguage:php'
+2025-02-22 07:38:15.867 [info] ExtensionService#_doActivateExtension codingyu.laravel-goto-view, startup: false, activationEvent: 'onLanguage:php'
+2025-02-22 07:38:16.197 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-02-22 07:38:16.198 [info] ExtensionService#_doActivateExtension Shan.code-settings-sync, startup: true, activationEvent: '*'
+2025-02-22 07:38:16.298 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2025-02-22 07:38:16.351 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-02-22 07:38:16.352 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-02-22 07:38:16.656 [info] Eager extensions activated
+2025-02-22 07:38:16.822 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 07:38:16.827 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 07:38:16.827 [info] ExtensionService#_doActivateExtension bradlc.vscode-tailwindcss, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 07:38:16.898 [info] ExtensionService#_doActivateExtension Codeium.codeium, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 07:38:17.670 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 07:38:17.828 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 07:38:17.902 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onStartupFinished', root cause: GitHub.vscode-pull-request-github
+2025-02-22 07:38:17.902 [info] ExtensionService#_doActivateExtension naumovs.color-highlight, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 07:38:18.356 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 07:38:18.379 [error] Failed to load translations for GitHub.vscode-pull-request-github from file:///home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/browser/extension/bundle.l10n.es.json: No se puede leer el archivo "/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/browser/extension/bundle.l10n.es.json" (Error: No se puede resolver el archivo inexistente '/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/browser/extension/bundle.l10n.es.json')
+2025-02-22 07:38:18.454 [warning] Using default string since no string found in i18n bundle that has the key: Copilot is powered by AI, so mistakes are possible. Review output carefully before use.
+2025-02-22 07:38:18.485 [warning] Using default string since no string found in i18n bundle that has the key: Try again?
+2025-02-22 07:38:18.485 [warning] Using default string since no string found in i18n bundle that has the key: Cancel
+2025-02-22 07:38:18.485 [warning] Using default string since no string found in i18n bundle that has the key: Sign In
+2025-02-22 07:38:18.485 [warning] Using default string since no string found in i18n bundle that has the key: Don't Show Again
+2025-02-22 07:38:18.485 [warning] Using default string since no string found in i18n bundle that has the key: prompt for sign in
+2025-02-22 07:38:18.487 [warning] Using default string since no string found in i18n bundle that has the key: Commit Staged
+2025-02-22 07:38:18.487 [warning] Using default string since no string found in i18n bundle that has the key: Commit All
+2025-02-22 07:38:18.487 [warning] Using default string since no string found in i18n bundle that has the key: Assignees:
+2025-02-22 07:38:18.487 [warning] Using default string since no string found in i18n bundle that has the key: Labels:
+2025-02-22 07:38:18.487 [warning] Using default string since no string found in i18n bundle that has the key: Milestone:
+2025-02-22 07:38:18.487 [warning] Using default string since no string found in i18n bundle that has the key: Projects:
+2025-02-22 07:38:18.487 [warning] Using default string since no string found in i18n bundle that has the key: My Issues
+2025-02-22 07:38:19.312 [warning] Using default string since no string found in i18n bundle that has the key: Cannot edit this pull request file. [Check out](command:pr.checkoutFromReadonlyFile) this pull request to edit.
+2025-02-22 07:38:19.323 [error] Activating extension GitHub.vscode-pull-request-github failed due to an error:
+2025-02-22 07:38:19.323 [error] Error: Extension 'GitHub.vscode-pull-request-github' CANNOT use API proposal: diffCommand.
+Its package.json#enabledApiProposals-property declares:  but NOT diffCommand.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api GitHub.vscode-pull-request-github
+	at N (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at Object.registerDiffInformationCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:172:36966)
+	at G0 (/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/extension.js:2213:2008)
+	at N4 (/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/extension.js:2556:4434)
+	at O4 (/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/extension.js:2556:9037)
+	at async A4 (/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/extension.js:2556:6046)
+	at async aw.n (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:4447)
+	at async aw.m (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:4410)
+	at async aw.l (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:3866)
+2025-02-22 07:38:20.424 [warning] Using default string since no string found in i18n bundle that has the key: Changes in Pull Request
+2025-02-22 07:38:21.388 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-02-22 07:38:21.388 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-02-22 07:38:21.389 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-02-22 07:38:22.239 [info] ExtensionService#_doActivateExtension MrChetan.goto-laravel-components, startup: false, activationEvent: 'onLanguage:blade'
+2025-02-22 07:38:22.241 [info] ExtensionService#_doActivateExtension onecentlin.laravel-blade, startup: false, activationEvent: 'onLanguage:blade'
+2025-02-22 07:38:22.297 [info] ExtensionService#_doActivateExtension shufo.vscode-blade-formatter, startup: false, activationEvent: 'onLanguage:blade'

@@ -1,0 +1,13 @@
+@import "buttons.css";
+@import "components.css";
+@import "styles.css";
+@import "select2.css";
+@import "ckeditor.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+}

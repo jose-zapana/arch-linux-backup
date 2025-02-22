@@ -1,0 +1,5 @@
+.ck-editor__editable {
+    background: transparent !important; /* Quita el fondo */
+    color: inherit !important; /* Asegura que el color del texto sea heredado */
+    border: none; /* Opcional, elimina bordes */
+}

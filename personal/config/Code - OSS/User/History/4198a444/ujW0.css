@@ -1,0 +1,56 @@
+/* Modo claro */
+.light .ck-content h1 {
+    color: #1a202c; /* Alto contraste para encabezados */
+}
+
+.light .ck-content h2 {
+    color: #2d3748; /* Contraste moderado */
+}
+
+.light .ck-content h3 {
+    color: #4a5568; /* Tonos más suaves pero legibles */
+}
+
+.light .ck-content h4 {
+    color: #718096; /* Tono claro para subencabezados */
+}
+
+.light .ck-content h5 {
+    color: #a0aec0; /* Contraste suave */
+}
+
+.light .ck-content p {
+    color: #4a5568; /* Texto de párrafos con buen contraste */
+}
+
+/* Modo oscuro */
+.dark .ck-content h1 {
+    color: #edf2f7; /* Alto contraste para encabezados */
+}
+
+.dark .ck-content h2 {
+    color: #e2e8f0; /* Moderado contraste */
+}
+
+.dark .ck-content h3 {
+    color: #cbd5e0; /* Tonos claros */
+}
+
+.dark .ck-content h4 {
+    color: #a0aec0; /* Subencabezados */
+}
+
+.dark .ck-content h5 {
+    color: #718096; /* Contraste suave */
+}
+
+.dark .ck-content p {
+    color: #cbd5e0; /* Texto de párrafos en modo oscuro */
+}
+
+/* Configuración general del editor */
+.ck-editor__editable {
+    background: transparent !important; /* Fondo transparente */
+    color: inherit !important; /* Hereda el color según el modo */
+    border: none; /* Sin bordes */
+}

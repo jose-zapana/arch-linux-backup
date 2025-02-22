@@ -1,0 +1,39 @@
+<?php
+
+namespace App\Livewire\Admin\Shipments;
+
+use Rappasoft\LaravelLivewireTables\DataTableComponent;
+use Rappasoft\LaravelLivewireTables\Views\Column;
+use App\Models\Shipment;
+
+class ShipmentTable extends DataTableComponent
+{
+    protected $model = Shipment::class;
+
+    public function configure(): void
+    {
+        $this->setPrimaryKey('id');
+    }
+
+    public function columns(): array
+    {
+        return [
+            Column::make("Id", "id")
+                ->sortable(),
+            Column::make("N°", "order_id")
+                ->sortable(),
+            Column::make("Conductor", "driver.user.name . driver.user.last_name")
+                ->sortable(),
+            Column::make("Status", "status")
+                ->sortable(),
+            Column::make("Refunded at", "refunded_at")
+                ->sortable(),
+            Column::make("Delivered at", "delivered_at")
+                ->sortable(),
+            Column::make("Created at", "created_at")
+                ->sortable(),
+            Column::make("Updated at", "updated_at")
+                ->sortable(),
+        ];
+    }
+}

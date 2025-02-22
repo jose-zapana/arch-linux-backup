@@ -1,0 +1,10 @@
+2025-02-22 06:31:13.312 [info] update#setState disabled
+2025-02-22 06:31:13.315 [info] update#ctor - updates are disabled as there is no update URL
+2025-02-22 06:48:21.276 [error] ptyHost terminated unexpectedly with code 15
+2025-02-22 06:48:21.284 [warning] [UtilityProcess type: ptyHost, pid: 1569]: unable to kill the process
+2025-02-22 06:48:21.307 [error] [UtilityProcess type: shared-process, pid: 1529]: crashed with code 15 and reason 'killed'
+2025-02-22 06:48:21.313 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2025-02-22 06:48:21.313 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 1530]: crashed with code 15 and reason 'killed'
+2025-02-22 06:48:21.315 [error] CodeWindow: renderer process gone (reason: clean-exit, code: <unknown>)
+2025-02-22 06:48:21.353 [info] Extension host with pid 1519 exited with code: 15, signal: unknown.
+2025-02-22 06:48:21.355 [error] [UtilityProcess id: 1, type: extensionHost, pid: 1519]: crashed with code 15 and reason 'killed'

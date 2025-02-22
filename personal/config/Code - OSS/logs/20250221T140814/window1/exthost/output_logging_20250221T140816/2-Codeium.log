@@ -1,0 +1,48 @@
+(VSCode) 2025-02-21 14:08:18.491 [INFO]: No proxy settings found
+(VSCode) 2025-02-21 14:08:19.641 [INFO]: Checking network connection...
+(VSCode) 2025-02-21 14:08:19.727 [INFO]: Creating manager directory: /tmp/c47bb242-57d3-4886-932b-227ec3a0173f/codeium/manager
+(VSCode) 2025-02-21 14:08:20.152 [INFO]: No Network Issue connecting to https://server.codeium.com/healthz
+(VSCode) 2025-02-21 14:08:20.495 [INFO]: Using cached LS with valid crc32: /home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/f967d079379dbf4f485c8ce9fce1d4fae1c70ede/language_server_linux_x64
+(VSCode) 2025-02-21 14:08:20.504 [INFO]: Language server started
+2025/02/21 14:08:20 maxprocs: Leaving GOMAXPROCS=6: CPU quota undefined
+I0221 14:08:20.586977  3308 main.go:572] [Language Server Manager] Setting GOMAXPROCS to 6
+I0221 14:08:20.587013  3308 main.go:791] [Language Server Manager] Starting language server manager with pid 3308
+I0221 14:08:20.587087  3308 main.go:123] [Language Server Manager] Manager acquired its lock file /tmp/c47bb242-57d3-4886-932b-227ec3a0173f/codeium/manager/locks/manager.lock
+I0221 14:08:20.588253  3308 main.go:264] [Language Server Manager] Waiting for random port file in /tmp/c47bb242-57d3-4886-932b-227ec3a0173f/codeium/manager/child_random_port_1740164900587240548_3433017871904906912 to be created
+2025/02/21 14:08:20 maxprocs: Leaving GOMAXPROCS=6: CPU quota undefined
+I0221 14:08:20.683337  3319 main.go:572] Setting GOMAXPROCS to 4
+I0221 14:08:20.683500  3319 main.go:785] Starting language server process with pid 3319
+I0221 14:08:20.683537  3319 server.go:221] Language server will attempt to listen on host 127.0.0.1
+I0221 14:08:20.683654  3319 server.go:228] Language server listening on random port at 46651
+I0221 14:08:21.120041  3319 unleash.go:92] Initializing Unleash
+I0221 14:08:21.540118  3319 unleash.go:112] Successfully initialized Unleash
+I0221 14:08:21.540292  3319 server.go:306] Extension server port not specified; skipping extension server client creation
+I0221 14:08:21.548329  3319 web_server.go:258] Chat Web Server listening at ws://127.0.0.1:45865
+I0221 14:08:21.558203  3319 server.go:559] Successfully created API server client
+I0221 14:08:21.589863  3319 server.go:577] Successfully initialized tokenizer
+I0221 14:08:21.637595  3319 server.go:761] Local search is enabled, will index local files.
+I0221 14:08:21.637615  3319 server.go:765] Using 1 indexer workers
+I0221 14:08:21.979767  3319 server.go:854] Successfully created completion provider
+I0221 14:08:21.979861  3319 server.go:905] Child process attempting to acquire lock file /tmp/c47bb242-57d3-4886-932b-227ec3a0173f/codeium/manager/locks/child_lock_1740164900587260485_6035411808181713138
+I0221 14:08:21.979912  3319 server.go:913] Child process acquired lock file /tmp/c47bb242-57d3-4886-932b-227ec3a0173f/codeium/manager/locks/child_lock_1740164900587260485_6035411808181713138
+I0221 14:08:21.990867  3319 server.go:365] LSP listening on random port at 43703
+43703
+I0221 14:08:21.993108  3308 main.go:300] [Language Server Manager] Found random server port 46651
+I0221 14:08:21.993133  3308 main.go:301] [Language Server Manager] Found random lsp port 43703
+I0221 14:08:21.993148  3308 main.go:308] [Language Server Manager] Attempting to connect to language server at 127.0.0.1:46651
+I0221 14:08:22.004461  3308 main.go:177] [Language Server Manager] Fixing language server port at 46651
+I0221 14:08:22.004480  3308 main.go:360] [Language Server Manager] Successfully connected to new language server at 127.0.0.1:46651
+(VSCode) 2025-02-21 14:08:22.015 [INFO]: Found language server running on port 46651
+(VSCode) 2025-02-21 14:08:22.084 [INFO]: openAllTextDocuments took 11.376403999999638ms
+(VSCode) 2025-02-21 14:13:50.449 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:13:50.689 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:13:50.765 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:13:51.107 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:14:20.029 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:31:11.812 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:31:21.707 [ERROR]: Illegal value for `line`
+(VSCode) 2025-02-21 14:31:21.760 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:31:22.693 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:31:29.586 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:32:37.485 [WARN]: User not logged in
+(VSCode) 2025-02-21 14:33:18.482 [WARN]: User not logged in

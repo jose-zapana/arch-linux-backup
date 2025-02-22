@@ -1,0 +1,16 @@
+2025-02-22 07:22:59.215 [warning] /home/jezs/.ssh/config: ENOENT: no such file or directory, open '/home/jezs/.ssh/config'
+2025-02-22 07:22:59.215 [info] Activation> Extension version: 0.104.1
+2025-02-22 07:22:59.566 [info] Looking for git repository
+2025-02-22 07:22:59.566 [info] Found 0 repositories during activation
+2025-02-22 07:22:59.566 [info] Git repository found, initializing review manager and pr tree view.
+2025-02-22 07:22:59.569 [info] Registering git provider
+2025-02-22 07:22:59.885 [info] Git initialization state changed: state=initialized
+2025-02-22 07:22:59.885 [info] Review+0> Validate state in progress
+2025-02-22 07:22:59.885 [info] Review+0> Validating state...
+2025-02-22 07:22:59.907 [info] Found GitHub remote for folder /var/www/pc-hard
+2025-02-22 07:23:00.355 [info] FolderRepositoryManager+0> Trying to use globalState for assignableUsers.
+2025-02-22 07:23:00.365 [info] Review+0> No matching pull request metadata found locally for current branch main
+2025-02-22 07:23:00.383 [info] FolderRepositoryManager+0> Using globalState assignableUsers for 1.
+2025-02-22 07:23:00.791 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2025-02-22 07:23:03.367 [info] Repo state for file:///var/www/pc-hard changed.
+2025-02-22 07:23:03.367 [info] Repo file:///var/www/pc-hard has already been setup.

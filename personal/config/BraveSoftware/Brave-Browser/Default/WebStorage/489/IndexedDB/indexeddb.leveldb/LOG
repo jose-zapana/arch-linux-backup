@@ -1,0 +1,6 @@
+2024/11/25-10:00:11.352 4fc Creating DB /home/jezs/.config/BraveSoftware/Brave-Browser/Default/WebStorage/489/IndexedDB/indexeddb.leveldb since it was missing.
+2024/11/25-10:00:11.359 4fc Reusing MANIFEST /home/jezs/.config/BraveSoftware/Brave-Browser/Default/WebStorage/489/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2024/11/25-10:10:15.428 4fd Level-0 table #5: started
+2024/11/25-10:10:15.430 4fd Level-0 table #5: 7899 bytes OK
+2024/11/25-10:10:15.431 4fd Delete type=0 #3
+2024/11/25-10:10:15.432 4fd Manual compaction at level-0 from (begin) .. (end); will stop at (end)

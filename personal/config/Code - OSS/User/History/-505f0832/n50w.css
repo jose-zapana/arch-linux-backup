@@ -1,0 +1,134 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark {
+    color: #ffffff; /* Texto blanco en modo oscuro */
+    background-color: #121212; /* Fondo oscuro */
+}
+
+/* Encabezados */
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5 {
+    color: inherit; /* Hereda el color del cuerpo (modo oscuro o claro) */
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    scroll-margin-top: 100px;
+}
+
+.post-body h1 {
+    font-size: 2.5rem;
+}
+
+.post-body h2 {
+    font-size: 2rem;
+}
+
+.post-body h3 {
+    font-size: 1.75rem;
+}
+
+.post-body h4 {
+    font-size: 1.5rem;
+}
+
+.post-body h5 {
+    font-size: 1.25rem;
+}
+
+/* Párrafos */
+.post-body p {
+    color: inherit; /* Hereda el color del cuerpo */
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Asegura que los encabezados y párrafos tengan un color apropiado en el modo oscuro */
+body.dark .post-body h1,
+body.dark .post-body h2,
+body.dark .post-body h3,
+body.dark .post-body h4,
+body.dark .post-body h5,
+body.dark .post-body p {
+    color: #ffffff; /* Texto blanco puro en modo oscuro */
+}
+
+.post-body {
+    overflow-x: hidden; /* Para evitar que el contenido completo se desborde */
+    width: 100%;
+}
+
+figure.table {
+    display: block; /* Asegúrate de que sea un bloque para contener la tabla */
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; /* Evita que el contenido de las celdas se ajuste automáticamente */
+}
+
+.post-body figure.table {
+    overflow-x: auto; /* Desplazamiento horizontal solo para la tabla */
+    -webkit-overflow-scrolling: touch; /* Mejor soporte en dispositivos móviles */
+    width: 100%; /* Limita el ancho de la tabla */
+    margin-top: 10px; /* Ajusta si necesitas algo de espacio arriba */
+}
+
+.post-body figure.table {
+    overflow-x: auto; /* Desplazamiento horizontal solo para la tabla */
+    -webkit-overflow-scrolling: touch; /* Mejor soporte en dispositivos móviles */
+    width: 100%; /* Limita el ancho de la tabla */
+    margin-top: 10px; /* Ajusta si necesitas algo de espacio arriba */
+}
+
+/* Aplica solo al elemento table dentro de figure */
+.post-body figure.table {
+    overflow-x: auto; /* Desplazamiento horizontal solo para la tabla */
+    -webkit-overflow-scrolling: touch; /* Mejor soporte en dispositivos móviles */
+    width: 100%; /* Limita el ancho de la tabla */
+    margin-top: 10px; /* Ajusta si necesitas algo de espacio arriba */
+}
+
+/* Tabla con estilo */
+.post-body table {
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho del figure */
+    border-collapse: collapse; /* Elimina el espacio entre celdas */
+}
+
+/* Celdas de la tabla */
+.post-body td,
+.post-body th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Modo oscuro: cambio de color de borde y fondo */
+.post-body.dark figure.table {
+    border-color: #444; /* Borde oscuro para la tabla en modo oscuro */
+}
+
+.post-body.dark table {
+    background-color: #333; /* Fondo oscuro para la tabla */
+}
+
+.post-body.dark td,
+.post-body.dark th {
+    border-color: #555; /* Bordes más oscuros en las celdas */
+    color: #ccc; /* Color de texto claro para las celdas en modo oscuro */
+}
+
+/* Asegurando que el modo oscuro también tenga un fondo adecuado */
+.post-body.dark {
+    background-color: #222; /* Fondo oscuro para el contenedor */
+    color: #ddd; /* Texto más claro en el contenedor */
+}

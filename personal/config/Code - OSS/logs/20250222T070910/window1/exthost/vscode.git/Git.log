@@ -1,0 +1,56 @@
+2025-02-22 07:09:15.928 [info] [main] Nivel de registro: Info
+2025-02-22 07:09:15.928 [info] [main] Validando git encontrado en: "git"
+2025-02-22 07:09:15.928 [info] [main] Usando git "2.48.1" de "git"
+2025-02-22 07:09:15.928 [info] [Model][doInitialScan] Initial repository scan started
+2025-02-22 07:09:15.928 [info] > git rev-parse --show-toplevel [39ms]
+2025-02-22 07:09:15.928 [info] > git rev-parse --git-dir --git-common-dir [174ms]
+2025-02-22 07:09:15.928 [info] [Model][openRepository] Opened repository: /var/www/pc-hard
+2025-02-22 07:09:15.933 [info] > git rev-parse --show-toplevel [74ms]
+2025-02-22 07:09:15.933 [info] > git config --get commit.template [91ms]
+2025-02-22 07:09:15.973 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-02-22 07:09:16.216 [info] > git status -z -uall [184ms]
+2025-02-22 07:09:16.216 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [176ms]
+2025-02-22 07:09:16.235 [info] > git rev-parse --show-toplevel [222ms]
+2025-02-22 07:09:16.261 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [28ms]
+2025-02-22 07:09:16.279 [info] > git config --get --local branch.main.vscode-merge-base [6ms]
+2025-02-22 07:09:16.280 [warning] [Git][config] git config failed: Failed to execute git
+2025-02-22 07:09:16.289 [info] > git rev-parse --show-toplevel [29ms]
+2025-02-22 07:09:16.289 [info] > git config --get commit.template [40ms]
+2025-02-22 07:09:16.325 [info] > git rev-parse --show-toplevel [24ms]
+2025-02-22 07:09:16.354 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [40ms]
+2025-02-22 07:09:16.355 [info] > git reflog main --grep-reflog=branch: Created from *. [66ms]
+2025-02-22 07:09:16.449 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [68ms]
+2025-02-22 07:09:16.449 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-02-22 07:09:16.449 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-02-22 07:09:16.459 [info] > git rev-parse --show-toplevel [105ms]
+2025-02-22 07:09:16.579 [info] > git check-ignore -v -z --stdin [107ms]
+2025-02-22 07:09:16.580 [info] > git merge-base refs/heads/main refs/remotes/origin/main [121ms]
+2025-02-22 07:09:16.622 [info] > git diff --name-status -z --diff-filter=ADMR 4d25453c0f18cacb19c1b57a6e3d6e0d6d95d3e9...refs/remotes/origin/main [35ms]
+2025-02-22 07:09:16.623 [info] > git rev-parse --show-toplevel [118ms]
+2025-02-22 07:09:16.623 [info] > git fetch [870ms]
+2025-02-22 07:09:16.623 [info] /bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+Missing or invalid credentials.
+Skip silent fetch commands
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+Missing or invalid credentials.
+Skip silent fetch commands
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/jose-zapana/pc-hard.git/'
+2025-02-22 07:09:16.662 [info] > git config --get commit.template [12ms]
+2025-02-22 07:09:16.662 [info] > git rev-parse --show-toplevel [19ms]
+2025-02-22 07:09:16.691 [info] > git rev-parse --show-toplevel [22ms]
+2025-02-22 07:09:16.702 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [12ms]
+2025-02-22 07:09:16.703 [info] > git rev-parse --show-toplevel [1ms]
+2025-02-22 07:09:16.718 [info] > git rev-parse --show-toplevel [5ms]
+2025-02-22 07:09:16.763 [info] > git status -z -uall [36ms]
+2025-02-22 07:09:16.763 [info] > git rev-parse --show-toplevel [22ms]
+2025-02-22 07:09:16.763 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [29ms]
+2025-02-22 07:09:16.821 [info] > git rev-parse --show-toplevel [31ms]
+2025-02-22 07:09:16.830 [info] > git rev-parse --show-toplevel [2ms]
+2025-02-22 07:09:16.831 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-02-22 07:09:16.848 [info] > git show --textconv :app/Livewire/Admin/Quotes/QuotationCreate.php [9ms]
+2025-02-22 07:09:16.848 [info] > git ls-files --stage -- /var/www/pc-hard/app/Livewire/Admin/Quotes/QuotationCreate.php [2ms]
+2025-02-22 07:09:16.872 [info] > git cat-file -s 64f0edd55b53c3b304a2f8f796ebdf9422f1363d [18ms]
+2025-02-22 07:09:16.940 [info] > git blame --root --incremental 4d25453c0f18cacb19c1b57a6e3d6e0d6d95d3e9 -- /var/www/pc-hard/app/Livewire/Admin/Quotes/QuotationCreate.php [42ms]
+2025-02-22 07:09:17.366 [info] > git config --get --local branch.main.github-pr-owner-number [2ms]
+2025-02-22 07:09:17.366 [warning] [Git][config] git config failed: Failed to execute git

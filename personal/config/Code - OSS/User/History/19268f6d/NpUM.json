@@ -1,0 +1,10 @@
+{
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-d>": false,
+    },
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Tokyo Night Storm"
+}

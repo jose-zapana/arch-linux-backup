@@ -1,0 +1,94 @@
+2025-02-21 14:08:16.509 [info] Extension host with pid 3054 started
+2025-02-21 14:08:16.509 [info] Skipping acquiring lock for /home/jezs/.config/Code - OSS/User/workspaceStorage/7d930dfa9ae1be12abd4fbe20cda072f.
+2025-02-21 14:08:16.811 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-02-21 14:08:16.814 [info] ExtensionService#_doActivateExtension codingyu.laravel-goto-view, startup: false, activationEvent: 'onLanguage:blade'
+2025-02-21 14:08:16.819 [info] ExtensionService#_doActivateExtension MrChetan.goto-laravel-components, startup: false, activationEvent: 'onLanguage:blade'
+2025-02-21 14:08:16.821 [info] ExtensionService#_doActivateExtension onecentlin.laravel-blade, startup: false, activationEvent: 'onLanguage:blade'
+2025-02-21 14:08:16.861 [info] ExtensionService#_doActivateExtension shufo.vscode-blade-formatter, startup: false, activationEvent: 'onLanguage:blade'
+2025-02-21 14:08:17.242 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-02-21 14:08:17.243 [info] ExtensionService#_doActivateExtension Shan.code-settings-sync, startup: true, activationEvent: '*'
+2025-02-21 14:08:17.330 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2025-02-21 14:08:17.382 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-02-21 14:08:17.383 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-02-21 14:08:17.670 [info] Eager extensions activated
+2025-02-21 14:08:17.729 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-02-21 14:08:17.730 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-02-21 14:08:17.730 [info] ExtensionService#_doActivateExtension bradlc.vscode-tailwindcss, startup: false, activationEvent: 'onStartupFinished'
+2025-02-21 14:08:17.809 [info] ExtensionService#_doActivateExtension Codeium.codeium, startup: false, activationEvent: 'onStartupFinished'
+2025-02-21 14:08:18.230 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2025-02-21 14:08:18.385 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-02-21 14:08:18.449 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onStartupFinished', root cause: GitHub.vscode-pull-request-github
+2025-02-21 14:08:18.449 [info] ExtensionService#_doActivateExtension naumovs.color-highlight, startup: false, activationEvent: 'onStartupFinished'
+2025-02-21 14:08:18.811 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2025-02-21 14:08:18.917 [error] Failed to load translations for GitHub.vscode-pull-request-github from file:///home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/browser/extension/bundle.l10n.es.json: No se puede leer el archivo "/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/browser/extension/bundle.l10n.es.json" (Error: No se puede resolver el archivo inexistente '/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/browser/extension/bundle.l10n.es.json')
+2025-02-21 14:08:18.987 [warning] Using default string since no string found in i18n bundle that has the key: Copilot is powered by AI, so mistakes are possible. Review output carefully before use.
+2025-02-21 14:08:19.012 [warning] Using default string since no string found in i18n bundle that has the key: Try again?
+2025-02-21 14:08:19.012 [warning] Using default string since no string found in i18n bundle that has the key: Cancel
+2025-02-21 14:08:19.012 [warning] Using default string since no string found in i18n bundle that has the key: Sign In
+2025-02-21 14:08:19.012 [warning] Using default string since no string found in i18n bundle that has the key: Don't Show Again
+2025-02-21 14:08:19.012 [warning] Using default string since no string found in i18n bundle that has the key: prompt for sign in
+2025-02-21 14:08:19.014 [warning] Using default string since no string found in i18n bundle that has the key: Commit Staged
+2025-02-21 14:08:19.014 [warning] Using default string since no string found in i18n bundle that has the key: Commit All
+2025-02-21 14:08:19.014 [warning] Using default string since no string found in i18n bundle that has the key: Assignees:
+2025-02-21 14:08:19.014 [warning] Using default string since no string found in i18n bundle that has the key: Labels:
+2025-02-21 14:08:19.014 [warning] Using default string since no string found in i18n bundle that has the key: Milestone:
+2025-02-21 14:08:19.014 [warning] Using default string since no string found in i18n bundle that has the key: Projects:
+2025-02-21 14:08:19.014 [warning] Using default string since no string found in i18n bundle that has the key: My Issues
+2025-02-21 14:08:19.532 [warning] Using default string since no string found in i18n bundle that has the key: Cannot edit this pull request file. [Check out](command:pr.checkoutFromReadonlyFile) this pull request to edit.
+2025-02-21 14:08:19.542 [error] Activating extension GitHub.vscode-pull-request-github failed due to an error:
+2025-02-21 14:08:19.542 [error] Error: Extension 'GitHub.vscode-pull-request-github' CANNOT use API proposal: diffCommand.
+Its package.json#enabledApiProposals-property declares:  but NOT diffCommand.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api GitHub.vscode-pull-request-github
+	at N (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at Object.registerDiffInformationCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:172:36966)
+	at G0 (/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/extension.js:2213:2008)
+	at N4 (/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/extension.js:2556:4434)
+	at O4 (/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/extension.js:2556:9037)
+	at async A4 (/home/jezs/.vscode-oss/extensions/github.vscode-pull-request-github-0.104.1-universal/dist/extension.js:2556:6046)
+	at async aw.n (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:4447)
+	at async aw.m (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:4410)
+	at async aw.l (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:3866)
+2025-02-21 14:08:20.667 [warning] Using default string since no string found in i18n bundle that has the key: Changes in Pull Request
+2025-02-21 14:08:22.089 [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+2025-02-21 14:08:22.089 [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client, startup: false, activationEvent: 'onLanguage:php'
+2025-02-21 14:08:22.427 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-02-21 14:08:22.428 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-02-21 14:08:22.429 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-02-21 14:30:49.603 [warning] TextEditor is closed/disposed
+2025-02-21 14:31:22.709 [error] Error: Illegal value for `line`
+	at mU.t (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1005)
+	at Object.lineAt (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:72)
+	at e.getCommandEditHints (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1863611)
+	at e.getNonCachedDocumentResults (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1865290)
+	at e.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1866355)
+	at d (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1851578)
+	at Generator.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1852920)
+	at Generator.next (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1852007)
+	at a (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1858134)
+	at s (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1858337)
+	at /home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1858396
+	at new Promise (<anonymous>)
+	at e.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1858277)
+	at e.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1866929)
+	at e.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1809564)
+	at d (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1796896)
+	at Generator.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1798238)
+	at Generator.next (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1797325)
+	at s (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1803812)
+	at a (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1804015)
+	at /home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1804074
+	at new Promise (<anonymous>)
+	at e.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1803955)
+	at e.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1810187)
+	at e.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1808756)
+	at d (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1796896)
+	at Generator.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1798238)
+	at Generator.next (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1797325)
+	at s (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1803812)
+	at a (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1804015)
+	at /home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1804074
+	at new Promise (<anonymous>)
+	at e.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1803955)
+	at e.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1808999)
+	at Immediate.<anonymous> (/home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/extension.js:2:1806417)
+	at process.processImmediate (node:internal/timers:483:21)

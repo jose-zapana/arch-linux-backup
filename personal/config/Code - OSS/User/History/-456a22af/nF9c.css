@@ -1,0 +1,14 @@
+.table {
+    @apply w-full;
+}
+.table th {
+    @apply p-3 text-sm font-semibold tracking-wide text-left;
+}
+
+.table td {
+    @apply p-3 text-sm text-gray-700 whitespace-nowrap;
+}
+
+.table tbody tr:nth-child(2n + 1) {
+    @apply bg-gray-50;
+}

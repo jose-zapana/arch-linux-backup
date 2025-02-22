@@ -1,0 +1,39 @@
+(VSCode) 2025-02-22 07:09:15.259 [INFO]: No proxy settings found
+(VSCode) 2025-02-22 07:09:16.571 [INFO]: Checking network connection...
+(VSCode) 2025-02-22 07:09:16.753 [INFO]: Creating manager directory: /tmp/4179dd4f-ea88-4d92-a563-9de2e63042ad/codeium/manager
+(VSCode) 2025-02-22 07:09:17.138 [INFO]: No Network Issue connecting to https://server.codeium.com/healthz
+(VSCode) 2025-02-22 07:09:17.475 [INFO]: Using cached LS with valid crc32: /home/jezs/.vscode-oss/extensions/codeium.codeium-1.34.2-universal/dist/f967d079379dbf4f485c8ce9fce1d4fae1c70ede/language_server_linux_x64
+(VSCode) 2025-02-22 07:09:17.483 [INFO]: Language server started
+2025/02/22 07:09:17 maxprocs: Leaving GOMAXPROCS=6: CPU quota undefined
+I0222 07:09:17.572663  1799 main.go:572] [Language Server Manager] Setting GOMAXPROCS to 6
+I0222 07:09:17.572699  1799 main.go:791] [Language Server Manager] Starting language server manager with pid 1799
+I0222 07:09:17.572775  1799 main.go:123] [Language Server Manager] Manager acquired its lock file /tmp/4179dd4f-ea88-4d92-a563-9de2e63042ad/codeium/manager/locks/manager.lock
+I0222 07:09:17.573228  1799 main.go:264] [Language Server Manager] Waiting for random port file in /tmp/4179dd4f-ea88-4d92-a563-9de2e63042ad/codeium/manager/child_random_port_1740226157572858713_753324868915945761 to be created
+2025/02/22 07:09:17 maxprocs: Leaving GOMAXPROCS=6: CPU quota undefined
+I0222 07:09:17.670792  1810 main.go:572] Setting GOMAXPROCS to 4
+I0222 07:09:17.674123  1810 main.go:785] Starting language server process with pid 1810
+I0222 07:09:17.674178  1810 server.go:221] Language server will attempt to listen on host 127.0.0.1
+I0222 07:09:17.674290  1810 server.go:228] Language server listening on random port at 37625
+I0222 07:09:18.154070  1810 unleash.go:92] Initializing Unleash
+I0222 07:09:18.581544  1810 unleash.go:112] Successfully initialized Unleash
+I0222 07:09:18.581704  1810 server.go:306] Extension server port not specified; skipping extension server client creation
+I0222 07:09:18.590018  1810 web_server.go:258] Chat Web Server listening at ws://127.0.0.1:35901
+I0222 07:09:18.607127  1810 server.go:559] Successfully created API server client
+I0222 07:09:18.641061  1810 server.go:577] Successfully initialized tokenizer
+I0222 07:09:18.697461  1810 server.go:761] Local search is enabled, will index local files.
+I0222 07:09:18.697483  1810 server.go:765] Using 1 indexer workers
+I0222 07:09:18.705942  1810 server.go:854] Successfully created completion provider
+I0222 07:09:18.705966  1810 server.go:905] Child process attempting to acquire lock file /tmp/4179dd4f-ea88-4d92-a563-9de2e63042ad/codeium/manager/locks/child_lock_1740226157572881462_5716317362709726605
+I0222 07:09:18.706002  1810 server.go:913] Child process acquired lock file /tmp/4179dd4f-ea88-4d92-a563-9de2e63042ad/codeium/manager/locks/child_lock_1740226157572881462_5716317362709726605
+I0222 07:09:18.711211  1810 server.go:365] LSP listening on random port at 37979
+37979
+I0222 07:09:18.778459  1799 main.go:300] [Language Server Manager] Found random server port 37625
+I0222 07:09:18.778487  1799 main.go:301] [Language Server Manager] Found random lsp port 37979
+I0222 07:09:18.778502  1799 main.go:308] [Language Server Manager] Attempting to connect to language server at 127.0.0.1:37625
+I0222 07:09:18.789808  1799 main.go:177] [Language Server Manager] Fixing language server port at 37625
+I0222 07:09:18.789822  1799 main.go:360] [Language Server Manager] Successfully connected to new language server at 127.0.0.1:37625
+(VSCode) 2025-02-22 07:09:18.917 [INFO]: Found language server running on port 37625
+(VSCode) 2025-02-22 07:09:19.100 [INFO]: openAllTextDocuments took 24.884689000000435ms
+W0222 07:14:39.796681  1799 main.go:127] [Language Server Manager] Got signal terminated, shutting down
+I0222 07:14:39.796629  1810 server.go:466] Got signal terminated, shutting down
+I0222 07:14:39.796692  1810 server.go:1064] Language server shutting down

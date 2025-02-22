@@ -1,0 +1,95 @@
+/* Estilos para los encabezados */
+.ck-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1a202c; /* Color oscuro, mejor accesibilidad en modo claro */
+}
+
+.ck-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #2d3748; /* Color ligeramente más claro */
+}
+
+.ck-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #4a5568; /* Aún más claro */
+}
+
+.ck-content h4 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #718096; /* Más claro */
+}
+
+.ck-content h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #a0aec0; /* Color claro, pero visible */
+}
+
+/* Estilos para los párrafos */
+.ck-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #4a5568; /* Contraste adecuado para textos largos */
+}
+
+/* Asegura que las imágenes centradas, alineadas y redimensionadas funcionen correctamente */
+
+/* Imagen centrada */
+.ck-content .image-style-alignCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Imagen alineada a la izquierda */
+.ck-content .image-style-alignLeft {
+    float: left;
+    margin-right: 1em;
+}
+
+/* Imagen alineada a la derecha */
+.ck-content .image-style-alignRight {
+    float: right;
+    margin-left: 1em;
+}
+
+/* Imagen de ancho completo */
+.ck-content .image-style-full {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Resetea el comportamiento de las imágenes para evitar conflictos */
+.ck-content img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+/* Asegura que el editor no cause desbordamientos en palabras largas */
+.ck-content {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+/* Espaciado adicional para evitar desbordamiento de texto cuando hay floats */
+.ck-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}

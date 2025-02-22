@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Shipment extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'order_id',
+        'driver_id',
+        'status',
+        'refunded_at',
+        'delivered_at',
+    ];
+
+    public $casts = [
+        'refunded_at' => 'datetime',
+        'delivered_at' => 'datetime',
+    ];
+}

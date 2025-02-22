@@ -1,0 +1,13 @@
+{
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-d>": false,
+    },
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "sync.gist": "293593f381a8a5d00a4fc70fd8a51d4a",
+    "git.autofetch": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

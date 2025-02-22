@@ -1,0 +1,111 @@
+/* ckeditor.css */
+
+/* Estilos para los encabezados */
+.ck-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1f2937; /* Equivalente a text-gray-800 */
+}
+
+.ck-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #374151; /* Equivalente a text-gray-700 */
+}
+
+.ck-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #4b5563; /* Equivalente a text-gray-600 */
+}
+
+.ck-content h4 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #6b7280; /* Equivalente a text-gray-500 */
+}
+
+.ck-content h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #9ca3af; /* Equivalente a text-gray-400 */
+}
+
+/* Estilos para los párrafos */
+.ck-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #6b7280; /* Equivalente a text-gray-500 */
+}
+
+/* Soporte para modo oscuro */
+.dark .ck-content h1 {
+    color: #f9fafb; /* Equivalente a text-gray-100 */
+}
+
+.dark .ck-content h2 {
+    color: #e5e7eb; /* Equivalente a text-gray-200 */
+}
+
+.dark .ck-content h3 {
+    color: #d1d5db; /* Equivalente a text-gray-300 */
+}
+
+.dark .ck-content h4 {
+    color: #9ca3af; /* Equivalente a text-gray-400 */
+}
+
+.dark .ck-content h5 {
+    color: #6b7280; /* Equivalente a text-gray-500 */
+}
+
+.dark .ck-content p {
+    color: #d1d5db; /* Equivalente a text-gray-300 */
+}
+
+/* Modo claro */
+:root {
+    --ck-border-radius: 4px;
+    --ck-font-size-base: 14px;
+
+    --ck-custom-background: hsl(0, 0%, 100%);
+    --ck-custom-foreground: hsl(0, 0%, 90%);
+    --ck-custom-border: hsl(0, 0%, 80%);
+    --ck-custom-white: hsl(0, 0%, 0%);
+
+    --ck-color-base-foreground: var(--ck-custom-foreground);
+    --ck-color-text: hsl(0, 0%, 10%);
+    --ck-color-button-default-background: var(--ck-custom-background);
+    --ck-color-button-default-hover-background: hsl(0, 0%, 90%);
+    --ck-color-input-background: var(--ck-custom-background);
+    --ck-color-input-border: hsl(0, 0%, 80%);
+    --ck-color-toolbar-background: var(--ck-custom-background);
+    --ck-color-tooltip-background: hsl(0, 0%, 10%);
+    --ck-color-tooltip-text: hsl(0, 0%, 100%);
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ck-custom-background: hsl(270, 1%, 29%);
+        --ck-custom-foreground: hsl(255, 3%, 18%);
+        --ck-custom-border: hsl(300, 1%, 22%);
+        --ck-custom-white: hsl(0, 0%, 100%);
+
+        --ck-color-base-foreground: var(--ck-custom-background);
+        --ck-color-text: hsl(0, 0%, 98%);
+        --ck-color-button-default-background: var(--ck-custom-background);
+        --ck-color-button-default-hover-background: hsl(270, 1%, 22%);
+        --ck-color-input-background: var(--ck-custom-background);
+        --ck-color-input-border: hsl(257, 3%, 43%);
+        --ck-color-toolbar-background: var(--ck-custom-background);
+        --ck-color-tooltip-background: hsl(252, 7%, 14%);
+        --ck-color-tooltip-text: hsl(0, 0%, 93%);
+    }
+}

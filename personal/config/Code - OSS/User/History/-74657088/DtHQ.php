@@ -1,0 +1,97 @@
+<?php
+
+use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\CartController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\CoverController;
+use App\Http\Controllers\Admin\CustomerController;
+use App\Http\Controllers\Admin\DenominationController;
+use App\Http\Controllers\Admin\DriverController;
+use App\Http\Controllers\Admin\FamilyController;
+use App\Http\Controllers\Admin\OptionController;
+use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\Admin\PdfController;
+use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\QuotationController;
+use App\Http\Controllers\Admin\RoleController;
+use App\Http\Controllers\Admin\SaleController;
+use App\Http\Controllers\Admin\ShipmentController;
+use App\Http\Controllers\Admin\SubcategoryController;
+use App\Http\Controllers\Admin\TagController;
+use App\Http\Controllers\Admin\UserController;
+use App\Models\Driver;
+use App\Models\Post;
+use App\Models\Shipment;
+use Illuminate\Support\Facades\Route;
+use Laravel\Jetstream\Http\Controllers\Inertia\CurrentUserController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('admin.dashboard');
+})->middleware(['can:access dashboard'])->name('dashboard');
+
+Route::get('/options', [OptionController::class, 'index'])->name('options.index');
+
+Route::resource('families', FamilyController::class);
+Route::resource('categories', CategoryController::class);
+Route::resource('subcategories', SubcategoryController::class);
+
+//Ruta de Clientes
+Route::resource('customers', CustomerController::class);
+//Ruta de Productos
+Route::resource('products', ProductController::class);
+
+Route::resource('denominations', DenominationController::class);
+
+Route::get('cart', [CartController::class, 'index'])->name('cart.index');
+
+Route::get('sales', [SaleController::class, 'index'])->name('sales.index');
+
+Route::resource('quotes', QuotationController::class);
+
+Route::get('quotes/generatepdf/{quote}', [QuotationController::class, 'generatePdf'])
+    ->name('quotes.generatepdf');
+
+Route::resource('roles', RoleController::class);
+
+Route::resource('drivers', DriverController::class);
+
+Route::get('shipments', [ShipmentController::class, 'index'])->name('shipments.index');
+
+Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
+
+
+//Ruta de Cotizacionestags?page=2
+Route::resource('Cotiza', ProductController::class);
+
+Route::get('products/{product}/variants/{variant}', [ProductController::class, 'variants'])
+    ->name('products.variants')
+    ->scopeBindings();
+
+Route::put('products/{product}/variants/{variant}', [ProductController::class, 'variantsUpdate'])
+    ->name('products.variantsUpdate')
+    ->scopeBindings();
+
+Route::resource('covers', CoverController::class);
+Route::resource('users', UserController::class);
+
+//Ruta para Blog
+
+Route::resource('post/categories', PostController::class)->names('posts.categories');
+
+Route::resource('tags', TagController::class)->names('tags');
+
+Route::resource('blogs', BlogController::class)->names('blogs');
+
+
